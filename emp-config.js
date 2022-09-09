@@ -70,9 +70,7 @@ module.exports = {
   },
   // module federation 独立配置
   async moduleFederation() {
-    const projectName = package?.projectName || 'Demo'
 
-    const routerName = `${projectName[0].toLowerCase()}${projectName.substring(1)}Router`
     return {
       /**
        * 项目名
@@ -102,7 +100,7 @@ module.exports = {
 
         /* utils */
         /* routes */
-        [routerName]: 'src/routes.ts',
+        './routes': 'src/routes.ts',
         /* routes */
       },
     };
