@@ -1,4 +1,4 @@
-# 合伙云管理后台
+# 云平台子项目
 
 ## Environment Prepare
 
@@ -25,7 +25,7 @@ npm run start
 ### 开发环境打包
 
 ```bash
-npm run serve
+npm run dev
 ```
 
 ### 测试环境打包
