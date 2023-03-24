@@ -1,11 +1,11 @@
 import localeCom from '@/components/localeCom';
 import React from 'react';
 
-const Home = () => {
+const GoodsDetail =()=>{
     return (
         <div>
-            home page
+            goods detail page
         </div>
     )
 }
-export default localeCom(Home);
+export default localeCom(GoodsDetail);
