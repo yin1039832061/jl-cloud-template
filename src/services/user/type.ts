@@ -1,10 +1,10 @@
 namespace ServiceType {
-  //账号列表
-  export interface BaseListResponse {
+  export interface BaseResponse {
     message: string;
     code: number;
   }
-  export interface UserListResponse extends BaseListResponse {
+  //账号列表
+  export interface UserListResponse extends BaseResponse {
     data: {
       dataList: User[];
       totalSize: number;
