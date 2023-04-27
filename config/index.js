@@ -65,7 +65,7 @@ const prod = {
   publicPath: 'https://partner-mng.xgd.com/cloudmanage/',
   remotes: {
     '@emp/basic-core': 'basicCoreModule@https://manage.jlpay.com/basiccore/jlpay.js',
-    '@emp/saas': 'saasManageModule@https://cs-mng.jlpay.com/jlpay.js',
+    '@emp-saas': 'saasManageModule@https://cs-mng.jlpay.com/jlpay.js',
   },
   externals: prodExternals,
   cssConf: prodCssConf,
@@ -76,7 +76,7 @@ const fat = {
   publicPath: 'https://partner-mng-fat.xgd.com/cloudmanage/',
   remotes: {
     '@emp/basic-core': 'basicCoreModule@https://manage-fat.jlpay.com/basiccore/jlpay.js',
-    '@emp/saas': 'saasManageModule@https://cs-mng-fat.jlpay.com/jlpay.js',
+    '@emp-saas': 'saasManageModule@https://cs-mng-fat.jlpay.com/jlpay.js',
   },
   externals: devExternals,
   cssConf: devCssConf,
@@ -87,7 +87,7 @@ const develop = {
   publicPath: 'https://partner-mng-dev.xgd.com/cloudmanage/',
   remotes: {
     '@emp/basic-core': 'basicCoreModule@https://manage-dev.jlpay.com/basiccore/jlpay.js',
-    '@emp/saas': 'saasManageModule@https://cs-mng-dev.jlpay.com/jlpay.js',
+    '@emp-saas': 'saasManageModule@https://cs-mng-dev.jlpay.com/jlpay.js',
   },
   externals: devExternals,
   cssConf: devCssConf,
@@ -98,7 +98,7 @@ const dev = {
   publicPath: `http://${utils.getNetworkIp()}:${port}/`,
   remotes: {
     '@emp/basic-core': 'basicCoreModule@https://manage-dev.jlpay.com/basiccore/jlpay.js',
-    '@emp/saas': 'saasManageModule@http://localhost:8086/jlpay.js',
+    '@emp-saas': 'saasManageModule@http://localhost:8086/jlpay.js',
   },
   externals: devExternals,
   cssConf: devCssConf,

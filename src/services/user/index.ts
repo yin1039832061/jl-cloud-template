@@ -1,4 +1,4 @@
-import axios from '@emp/saas/js/fetch';
+import axios from '@emp-saas/js/fetch';
 // import axios from 'src/utils/fetch'
 import Api from './api';
 import ServiceType from './type';

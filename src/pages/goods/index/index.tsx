@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 
 
 const GoodsList = () => {
-    const [list, setList] = useState<GetTypeByKey<ServiceType.GetGoodsListResponse, 'data'>>([])
+    const [list, setList] = useState<GetTypeByKey<ServiceType.GetGoodsListResponse, 'data.dataList'>>([])
     useEffect(() => {
         getData()
     }, [])
