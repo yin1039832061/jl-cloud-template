@@ -52,7 +52,7 @@ module.exports = {
         trailingComma: 'all',
         bracketSpacing: true,
         // jsxBracketSameLine: true,
-        arrowParens: 'avoid',
+        arrowParens: 'always',
         insertPragma: false,
         tabWidth: 2,
         useTabs: false,
@@ -63,10 +63,6 @@ module.exports = {
   },
   globals: {
     GetTypeByKey: true,
-    AdditionConnectType: true,
-    ConnectBaseType: true,
-    _Reducer: true,
-    AdditionDispatch: true,
   },
   settings: {
     react: {
