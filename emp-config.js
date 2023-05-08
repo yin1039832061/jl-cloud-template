@@ -75,7 +75,7 @@ module.exports = {
       /**
        * 项目名
        */
-      name: package?.projectName || 'Demo',
+      name: package?.packageName || 'Demo',
 
       /**
        * 当前暴露模块索引文件
