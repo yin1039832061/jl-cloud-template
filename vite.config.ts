@@ -11,14 +11,14 @@ export default defineConfig({
       inject: {
         tags: [
           {
-            injectTo: 'body',
+            injectTo: 'head',
             tag: 'script',
             attrs: {
               src: 'https://ux-assest.jlpay.com/emp/react/react.production.min.js',
               defer: true
             }
           }, {
-            injectTo: 'body',
+            injectTo: 'head',
             tag: 'script',
             attrs: {
               src: 'https://ux-assest.jlpay.com/emp/react-dom/react-dom.production.min.js',
