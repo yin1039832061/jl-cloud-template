@@ -1,0 +1,31 @@
+.breadCrumbContainer {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 1px 0px 0px #eeeeee;
+  padding-left: 24px;
+
+  :global {
+    .ant-breadcrumb {
+      ol > li {
+        line-height: 21px;
+        .ant-breadcrumb-link {
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 400;
+          font-size: 13px;
+          color: #000000;
+        }
+
+        &:last-child {
+          .ant-breadcrumb-link {
+            font-family: PingFangSC, PingFang SC;
+            font-weight: 500;
+            font-size: 16px;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}

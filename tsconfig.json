@@ -1,17 +1,7 @@
 {
-  "extends": "@efox/emp-tsconfig",
-  "compilerOptions": {
-    "jsx": "react",
-    "noImplicitAny": false,
-    "baseUrl": ".",
-    "plugins": [
-      {
-        "name": "typescript-plugin-css-modules"
-      }
-    ],
-    "paths": {
-      "@/*": ["src/*"]
-    }
-  },
-  "include": ["src/**/*", "@types/**/*"]
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
 }

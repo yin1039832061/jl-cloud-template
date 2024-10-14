@@ -1,25 +1,22 @@
-import React from 'react';
-import { Route, BrowserRouter, Switch } from 'react-router-dom';
-import Home from 'src/pages/home';
-const routes = [
-  {
-    path: '/home',
-    component: Home,
-  },
-  {
-    path: '/',
-    component: Home,
-  },
-];
-const App = () => {
+import { Routes, Route } from 'react-router-dom';
+import { Suspense } from 'react';
+import routes from './routes';
+import HOC from './components/HOC';
+function App() {
+
   return (
-    <BrowserRouter>
-      <Switch>
-        {routes.map(route => (
-          <Route component={route.component} path={route.path} key={route.path} />
-        ))}
-      </Switch>
-    </BrowserRouter>
-  );
-};
-export default App;
+    <div>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          {
+            routes.map(route=>(
+              <Route key={route.path} path={route.path} element={<route.component />} />
+            ))
+          }
+        </Routes>
+      </Suspense>
+    </div>
+  )
+}
+
+export default HOC(App);
